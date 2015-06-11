@@ -1,0 +1,53 @@
+<RCC>
+    <qresource prefix="/images/stones" lang="Sk">
+        <file alias="Stone_I">img/kamen2.png</file>
+        <file alias="Stone_L">img/kamen-l-1.png</file>
+        <file alias="Stone_T">img/kamen-t-2.png</file>
+    </qresource>
+    <qresource prefix="/images/buttons" lang="Sk">
+        <file alias="Rotate">img/rotate.png</file>
+        <file alias="Arrow">img/arrow.png</file>
+        <file alias="Undo">img/undo.png</file>
+        <file alias="CardPack">img/card_pack.png</file>
+        <file alias="Next">img/next.png</file>
+    </qresource>
+    <qresource prefix="/images/backgrounds" lang="Sk">
+        <file alias="TitleBG">img/title.png</file>
+    </qresource>
+    <qresource prefix="/images/players">
+        <file alias="Player1">img/player_icons/player1.png</file>
+        <file alias="Player2">img/player_icons/player2.png</file>
+        <file alias="Player3">img/player_icons/player3.png</file>
+        <file alias="Player4">img/player_icons/player4.png</file>
+    </qresource>
+    <qresource prefix="/images/items">
+        <file alias="Item1">img/item_icons/item1.png</file>
+        <file alias="Item2">img/item_icons/item2.png</file>
+        <file alias="Item3">img/item_icons/item3.png</file>
+        <file alias="Item4">img/item_icons/item4.png</file>
+        <file alias="Item5">img/item_icons/item5.png</file>
+        <file alias="Item6">img/item_icons/item6.png</file>
+        <file alias="Item7">img/item_icons/item7.png</file>
+        <file alias="Item8">img/item_icons/item8.png</file>
+        <file alias="Item9">img/item_icons/item9.png</file>
+        <file alias="Item10">img/item_icons/item10.png</file>
+        <file alias="Item11">img/item_icons/item11.png</file>
+        <file alias="Item12">img/item_icons/item12.png</file>
+        <file alias="Item13">img/item_icons/item13.png</file>
+        <file alias="Item14">img/item_icons/item14.png</file>
+        <file alias="Item15">img/item_icons/item15.png</file>
+        <file alias="Item16">img/item_icons/item16.png</file>
+        <file alias="Item17">img/item_icons/item17.png</file>
+        <file alias="Item18">img/item_icons/item18.png</file>
+        <file alias="Item19">img/item_icons/item19.png</file>
+        <file alias="Item20">img/item_icons/item20.png</file>
+        <file alias="Item21">img/item_icons/item21.png</file>
+        <file alias="Item22">img/item_icons/item22.png</file>
+        <file alias="Item23">img/item_icons/item23.png</file>
+        <file alias="Item24">img/item_icons/item24.png</file>
+    </qresource>
+    <qresource prefix="/images/cards">
+        <file alias="CardHidden">img/card_not_show.png</file>
+        <file alias="CardVisible">img/card_show_item.png</file>
+    </qresource>
+</RCC>
