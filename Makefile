@@ -28,11 +28,11 @@ CXXFLAGS=-std=c++11 -Wall -Wextra -pedantic -g -W -O3 -I$(INC)/
 
 all: 
 	cd src/source; make
-	cd src/gui; /usr/local/share/Qt-5.2.1/5.2.1/gcc_64/bin/qmake gui.pro
+	cd src/gui; qmake -qt5 gui.pro
 	cd src/gui; make
 
 $(NAME):
-	cd src/gui; /usr/local/share/Qt-5.2.1/5.2.1/gcc_64/bin/qmake gui.pro
+	cd src/gui; qmake -qt5 gui.pro
 	cd src/gui; make
 
 $(NAME-CLI):
