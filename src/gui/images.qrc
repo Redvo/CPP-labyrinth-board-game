@@ -1,18 +1,17 @@
 <RCC>
     <qresource prefix="/images/stones" lang="Sk">
-        <file alias="Stone_I">img/kamen2.png</file>
-        <file alias="Stone_L">img/kamen-l-1.png</file>
-        <file alias="Stone_T">img/kamen-t-2.png</file>
+        <file alias="Stone_I">img/stones/kamen2.png</file>
+        <file alias="Stone_L">img/stones/kamen-l-1.png</file>
+        <file alias="Stone_T">img/stones/kamen-t-2.png</file>
     </qresource>
     <qresource prefix="/images/buttons" lang="Sk">
-        <file alias="Rotate">img/rotate.png</file>
-        <file alias="Arrow">img/arrow.png</file>
-        <file alias="Undo">img/undo.png</file>
-        <file alias="CardPack">img/card_pack.png</file>
-        <file alias="Next">img/next.png</file>
+        <file alias="Arrow">img/buttons/arrow.png</file>
+        <file alias="Next">img/buttons/next.png</file>
+        <file alias="Rotate">img/buttons/rotate.png</file>
+        <file alias="Undo">img/buttons/undo.png</file>
     </qresource>
     <qresource prefix="/images/backgrounds" lang="Sk">
-        <file alias="TitleBG">img/title.png</file>
+        <file alias="TitleBG">img/backgrounds/title.png</file>
     </qresource>
     <qresource prefix="/images/players">
         <file alias="Player1">img/player_icons/player1.png</file>
@@ -47,7 +46,8 @@
         <file alias="Item24">img/item_icons/item24.png</file>
     </qresource>
     <qresource prefix="/images/cards">
-        <file alias="CardHidden">img/card_not_show.png</file>
-        <file alias="CardVisible">img/card_show_item.png</file>
+        <file alias="CardHidden">img/cards/card_not_show.png</file>
+        <file alias="CardPack">img/cards/card_pack.png</file>
+        <file alias="CardVisible">img/cards/card_show_item.png</file>
     </qresource>
 </RCC>

@@ -214,7 +214,7 @@ void GameWindow::RenderAchievedCard() {
     QPushButton *achievedCardsButton = new QPushButton(this->centralWidget());
     achievedCardsButton->setGeometry(122,182,72,72);
     achievedCardsButton->setFlat(true);
-    achievedCardsButton->setIcon(QIcon(":/images/buttons/CardPack"));
+    achievedCardsButton->setIcon(QIcon(":/images/cards/CardPack"));
     achievedCardsButton->setIconSize(QSize(72,72));
     achievedCardsButton->setAutoFillBackground(true);
     achievedCardsButton->setStyleSheet("QPushButton{background: transparent;}");

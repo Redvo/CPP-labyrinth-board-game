@@ -1,12 +1,45 @@
-Project in course The C++ Programming Language at Faculty of Information Technology, Brno University of Technology. 
+ICP Projekt - 6.5.2015
 
-Authors: Lukáš Rendvanský (xrendv00@stud.fit.vutbr.cz)
-         Irena Talašová   (xtalas04@stud.fit.vutbr.cz)
+Autori: Lukáš Rendvanský (xrendv00@stud.fit.vutbr.cz)
+        Irena Talašová   (xtalas04@stud.fit.vutbr.cz)
 
-Libraries with CLI and GUI interfaces for the Labyrinth board game.
-QT 5 libraries or higher requered to compile.
+Úlohou projektu bolo implementovať stolnú hru Labyrint v textovom aj grafickom prostredí.
 
-Usage: make / make all        - compile both CLI and GUI versions
-       make labyrinth2015     - compile GUI version
-       make labyrinth2015-cli - compile CLI version
-       make doxygen           - generate HTML class documentation (modify doc/Doxyfile for another format)
+Spustenie hry v textovom CLI prostredí je vysvetlené v nápovede ./labyrinth2015-cli --help
+
+Implementácia je rozdelená do 3 častí. 
+1. časťou sú súbory v priečinku src/source (s výnimkou main.c),
+ktoré slúžia ako knižnica funkcií potrebných pre chod projektu, nezávisle na použitom prostredí.
+
+2. časťou je súbor src/source/main.c, ktorý ukazuje implementáciu projektu v CLI rozhraní,
+s použítím zvyšných súborov.
+
+3. časťou je implementácia grafického prostredia v priečinku src/gui, ktoré opäť využíva rovnaké
+súbory z priečinka src/source ako CLI verzia.
+
+V pričinku src/header sa nachádzajú všetky hlavičkové súbory a sú zahrnuté do projektu pri preklade
+pomocou direktívy "-I../header/".
+
+
+POZOR - ZNÁMA CHYBA:
+Na niektorých distribúciach nechce správne načítavať niektoré náhodné obrázky do QPixmap, nefunguje to ani na serveri Merlin.
+V prípade že projekt preložím u seba alebo na Merlinovi a skopírujem binárku k sebe, všetky obrázky sa pri spustení u mňa zobrazia.
+Ak preložím projekt na Merlinovi alebo u seba a skopírujem binárku na Merlina, niektoré obrázky sa pri spustení na Merlinovi nezobrazia.
+Obrázky sa načítavajú cez resource súbor a sú zahrnuté v priečinku src/gui/img/. 
+Skúšal som aj prekladaný resource súbor, efekt bol rovnaký. Na obhajobe ukážem funkčnosť na svojom notebooku.
+PS: pri spustení cez QT creator by sa mali obrázky načítať správne.
+
+UPDATE odovzdanie 25.5.2015 - prakticky len drobné zmeny
+
+FIX:
+src/source/gameboard.cpp - void GameBoard::UndoAction(Player *player) - riadky 478,479,480
+Ostránené zbytočné debug výpisy a pridaná kontrola na NULL - aplikácia padala pri Undo ak hráč nemal získané žiadne karty.
+
+CHANGE:
+src/gui/main.cpp - odstránené načítanie preloženého resource súboru z absolútnej cesty
+src/gui/images.rcc - odstránený preložený resource súbor
+src/gui/gui.pro - použitie originálneho resource súboru pri preklade
+Vytvorená lepšia adresárová štruktúra pre obrázky.
+
+Odstránená doxygen dokumentácia z doc/html/, z nejakého dôvodu som ju zabudol pred prvým odovzdaním odstrániť.
+Odstránené zbytočné premenné z hlavného Makefile.

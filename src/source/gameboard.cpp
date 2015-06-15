@@ -475,9 +475,9 @@ void GameBoard::UndoAction(Player *player) {
     }
 
     if(this->itemTaken) {
-        cout << to_string(this->takenTreasure) << "   " << to_string(player->GetHoldingTreasure()->GetAchievedCards()->back()->GetCardNumber()) << endl;
-        player->GetHoldingTreasure()->GetAchievedCards()->pop_back();
-        cout << to_string(this->takenTreasure) << "   " << to_string(player->GetHoldingTreasure()->GetAchievedCards()->back()->GetCardNumber()) << endl;
+    	if(player->GetHoldingTreasure()->GetAchievedCards() != NULL) {
+        	player->GetHoldingTreasure()->GetAchievedCards()->pop_back();
+    	}
         player->SetTreasureCard(new TreasureCard(this->takenTreasure));
         sstone->SetTreasure(static_cast<Treasure>(this->takenTreasure));
         this->takenTreasure = 0;

@@ -52,4 +52,4 @@ HEADERS  += gamewindow.h \
 FORMS    += gamewindow.ui \
     gamemenu.ui
 
-#RESOURCES += images.qrc
+RESOURCES += images.qrc
